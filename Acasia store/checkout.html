@@ -1,0 +1,56 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acasia Store | تأكيد الطلب</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.jpg" alt="Acasia Logo"></a>
+    </div>
+    <nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="products.html">المنتجات</a>
+  <a href="cart.html">سلة المشتريات</a>
+  <a href="checkout.html">تأكيد الطلب</a>
+  <a href="about.html">عن الشركة</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+  </header>
+
+  <section id="checkout">
+    <h2>تأكيد الطلب</h2>
+    <form action="sendMail.php" method="POST">
+      <label for="customer-name">الاسم الكامل</label>
+      <input type="text" id="customer-name" name="customerName" required>
+
+      <label for="phone">رقم الهاتف</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">عنوان التوصيل</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <input type="hidden" id="order-data" name="orderData">
+
+      <button type="submit">تأكيد الطلب</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Acasia Store. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    // يفترض أن يتم تعبئة البيانات من LocalStorage أو Session قبل الإرسال
+    document.getElementById('order-data').value = localStorage.getItem('cartData') || '';
+  </script>
+</body>
+</html>

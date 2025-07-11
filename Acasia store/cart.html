@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>سلة المشتريات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.jpg" alt="Acasia Logo" /></a>
+    </div>
+    <nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="products.html">المنتجات</a>
+  <a href="cart.html">سلة المشتريات</a>
+  <a href="checkout.html">تأكيد الطلب</a>
+  <a href="about.html">عن الشركة</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+  </header>
+
+  <h2>سلة المشتريات</h2>
+  <ul id="cartItems"></ul>
+
+  <!-- زر تأكيد الطلب -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="checkout.html" class="btn">تأكيد الطلب</a>
+<button id="clearCartBtn">تفريغ السلة</button>
+
+  </div>
+
+  <script>
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartList = document.getElementById("cartItems");
+
+  if (cart.length === 0) {
+    cartList.innerHTML = "<li>السلة فارغة</li>";
+    document.getElementById("checkoutBtn").style.display = "none";
+    document.getElementById("clearCartBtn").style.display = "none";
+  } else {
+    cart.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      cartList.appendChild(li);
+    });
+  }
+
+  // تفريغ السلة
+  document.getElementById("clearCartBtn").addEventListener("click", function () {
+    localStorage.removeItem("cart");
+    location.reload();
+  });
+
+  // الانتقال لصفحة تأكيد الطلب
+  document.getElementById("checkoutBtn").addEventListener("click", function () {
+    window.location.href = "checkout.html";
+  });
+</script>
+
+  <div class="cart-actions">
+  
+</div>
+<footer>
+    <p>&copy; 2025 Acasia Store. جميع الحقوق محفوظة.</p>
+  </footer>
+
+</body>
+</html>
+

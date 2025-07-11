@@ -1,0 +1,131 @@
+
+
+
+<?php include 'header.php'; ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acasia Store | المنتجات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.jpg" alt="Acasia Logo" /></a>
+    </div>
+    <nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="products.html">المنتجات</a>
+  <a href="cart.html">سلة المشتريات</a>
+  <a href="checkout.html">تأكيد الطلب</a>
+  <a href="about.html">عن الشركة</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+  </header>
+
+  <section id="products">
+    <h2>المنتجات</h2>
+    <div class="product-grid">
+      <!-- 100 منتج -->
+      <!-- كرر البلوك دا 100 مرة مع تغيير البيانات -->
+      <!-- مثال واحد فقط: -->
+       <div class="product">
+        <img src="https://souqalmatbakh.com/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-02-at-4.37.23-PM.jpeg" alt="صورة المنتج" />
+        <h3>مكنسه رافال 2200 وات </h3>
+        <p>السعر:2699 </p>
+        <button onclick="addToCart('مكنسه رافال 2200 وات ')">اطلب الآن</button>
+      </div>
+      <!-- كرر هنا البلوك حسب عدد المنتجات المطلوبة -->
+  <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztx-DZJg6cjLJo1ZOCYp2xm8IqT9ofa1HNQ&s" alt="صورة المنتج" />
+        <h3>مكنسه orca 1200 w </h3>
+        <p>السعر:2000 </p>
+        <button onclick="addToCart('مكنسه orca 1200 w ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://btech.com/media/catalog/product/cache/0faa0b7e45154261397445d2463a2361/i/t/item_xxl_131906301_ac8911d617c93.jpg" alt="صورة المنتج" />
+        <h3>مكنسة بلاك اند وايت 2000 وات </h3>
+        <p>السعر:4250 </p>
+        <button onclick="addToCart('مكنسة بلاك اند وايت 2000 وات ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/415809XGN0L._AC_UL495_SR435,495_.jpg" alt="صورة المنتج" />
+        <h3>قلاية هوائية رافال مودرن 1450 وات </h3>
+        <p>السعر:3699 </p>
+        <button onclick="addToCart('قلاية هوائية رافال مودرن 1450 وات ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://btech.com/media/catalog/product/cache/04e06ef4fd8a2772d780ecc59a7e59f1/c/7/c7afb17a93a02606d6cd40e0566fe9cf5175f7195f618b4001e32f65e9068f08.jpeg" alt="صورة المنتج" />
+        <h3>مكنسه بنجوين 2000 وات </h3>
+        <p>السعر:2650 </p>
+        <button onclick="addToCart('مكنسه بنجوين 2000 وات ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51CL1Tu+dnL._UF350,350_QL50_.jpg" alt="صورة المنتج" />
+        <h3>مكنسه ليفون 2000 وات </h3>
+        <p>السعر:4800 </p>
+        <button onclick="addToCart('مكنسه ليفون 2000 وات ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://cdn.ilofo.com/public/storage/products/images/WfS402lX1GSGkCNJ1719610029-720x720.webp" alt="صورة المنتج" />
+        <h3>بوتجاز رفال مسطح عين واحده 1500 وات </h3>
+        <p>السعر:599 </p>
+        <button onclick="addToCart('بوتجاز رفال مسطح عين واحده 1500 وات ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://be.fresh.com.eg/media/catalog/product/cache/6fdb9282313a7e48374fe05a5418029a/f/r/fresh_washing_machine_duetto_-_fwt500na.png" alt="صورة المنتج" />
+        <h3>غساله فريش 2 حوض 5كيلو </h3>
+        <p>السعر:3699 </p>
+        <button onclick="addToCart('غساله فريش 2 حوض 5كيلو ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://qarine.com/wp-content/uploads/2025/01/395-.jpg" alt="صورة المنتج" />
+        <h3>ثلاجة توشيبا 14 قدم </h3>
+        <p>السعر:17999 </p>
+        <button onclick="addToCart('ثلاجة توشيبا 14 قدم ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://www.raneen.com/media/catalog/product/2/-/2-1-clipdrop-enhance_ehv5jmofe5mbqwwd_1_1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=1000&width=1000&canvas=1000:1000" alt="صورة المنتج" />
+        <h3>عجان رافال 3*1 </h3>
+        <p>السعر:8999 </p>
+        <button onclick="addToCart('عجان رافال 3*1 ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://www.raneen.com/media/catalog/product/d/c/dcvbn.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=" alt="صورة المنتج" />
+        <h3>عجان رافال 1300 وات </h3>
+        <p>السعر:3899 </p>
+        <button onclick="addToCart('عجان رافال 1300 وات ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://www.raneen.com/media/catalog/product/1/8/18_u6lkj4foty42vxuw_1.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=" alt="صورة المنتج" />
+        <h3>مكوه اريون 2400 وات </h3>
+        <p>السعر:999 </p>
+        <button onclick="addToCart('   مكوه اريون 2400 وات ')">اطلب الآن</button>
+      </div>
+        <div class="product">
+        <img src="https://xpremo.com/wp-content/uploads/2025/06/sRx0MJ1Rasss1XGU68SQrNWq5RYqU7S8aCwXFA4q.png" alt="صورة المنتج" />
+        <h3>بوتاجاز مسطح 2 عين </h3>
+        <p>السعر:875 </p>
+        <button onclick="addToCart('بوتاجاز مسطح 2 عين ')">اطلب الآن</button>
+      </div>
+
+       
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Acasia Store. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <div class="cart-actions">
+  </div>
+
+</body>
+</html>

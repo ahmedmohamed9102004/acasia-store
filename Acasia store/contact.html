@@ -1,0 +1,49 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acasia Store | تواصل معنا</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="logo.jpg" alt="Acasia Logo" /></a>
+    </div>
+    <nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="products.html">المنتجات</a>
+  <a href="cart.html">سلة المشتريات</a>
+  <a href="checkout.html">تأكيد الطلب</a>
+  <a href="about.html">عن الشركة</a>
+  <a href="contact.html">تواصل معنا</a>
+</nav>
+
+  </header>
+
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <form action="sendMail.php" method="POST">
+      <label for="name">الاسم</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">رسالتك</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Acasia Store. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
